@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#065f46">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="뉴밀레니엄클럽">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20rx%3D%2240%22%20fill%3D%22%23f8fafc%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22160%22%20height%3D%22160%22%20rx%3D%2232%22%20fill%3D%22none%22%20stroke%3D%22%23065f46%22%20stroke-width%3D%224%22/%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%2272%22%20r%3D%2230%22%20fill%3D%22%23065f46%22/%3E%3Ccircle%20cx%3D%2279%22%20cy%3D%2262%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%2293%22%20cy%3D%2260%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%22102%22%20cy%3D%2270%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%2285%22%20cy%3D%2276%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%2298%22%20cy%3D%2282%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ctext%20x%3D%2290%22%20y%3D%22128%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22bold%22%20fill%3D%22%23065f46%22%20text-anchor%3D%22middle%22%3ENMC%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22150%22%20font-family%3D%22Helvetica%2CArial%22%20font-size%3D%2211%22%20fill%3D%22%23059669%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%222%22%3EGOLF%20CLUB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20rx%3D%2240%22%20fill%3D%22%23f8fafc%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22160%22%20height%3D%22160%22%20rx%3D%2232%22%20fill%3D%22none%22%20stroke%3D%22%23065f46%22%20stroke-width%3D%224%22/%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%2272%22%20r%3D%2230%22%20fill%3D%22%23065f46%22/%3E%3Ccircle%20cx%3D%2279%22%20cy%3D%2262%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%2293%22%20cy%3D%2260%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%22102%22%20cy%3D%2270%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%2285%22%20cy%3D%2276%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ccircle%20cx%3D%2298%22%20cy%3D%2282%22%20r%3D%223.5%22%20fill%3D%22%23a7f3d0%22/%3E%3Ctext%20x%3D%2290%22%20y%3D%22128%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22bold%22%20fill%3D%22%23065f46%22%20text-anchor%3D%22middle%22%3ENMC%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22150%22%20font-family%3D%22Helvetica%2CArial%22%20font-size%3D%2211%22%20fill%3D%22%23059669%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%222%22%3EGOLF%20CLUB%3C/text%3E%3C/svg%3E">
+<title>뉴밀레니엄클럽</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+       background:#f1f5f9;color:#0f172a;padding-bottom:76px;--c:#059669;--cd:#047857;--cs:#ecfdf5}
+  #app{max-width:440px;margin:0 auto;min-height:100vh}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  input,textarea,select{font-family:inherit}
+  .card{background:#fff;border-radius:18px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px}
+  .muted{color:#64748b;font-size:13px} .tiny{font-size:11px;color:#94a3b8}
+  .row{display:flex;justify-content:space-between;align-items:center;padding:9px 0}
+  .avatar{width:32px;height:32px;border-radius:50%;background:var(--cs);color:var(--cd);
+          display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+  .pill{font-size:11px;padding:4px 10px;border-radius:20px;display:inline-flex;gap:4px;font-weight:700}
+  .p-ok{background:#ecfdf5;color:#047857} .p-no{background:#fff1f2;color:#e11d48} .p-mid{background:#f1f5f9;color:#475569}
+  .badge{font-size:10px;background:#f1f5f9;color:#64748b;padding:2px 6px;border-radius:5px}
+  .icb{width:30px;height:30px;border-radius:9px;background:#f1f5f9;font-size:13px;flex-shrink:0}
+  .qm{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+  .qmi{background:#fff;border-radius:16px;padding:14px 4px 11px;box-shadow:0 1px 3px rgba(0,0,0,.06);
+       font-size:11px;font-weight:700;color:#334155;line-height:1.35}
+  .qmi span{display:block;font-size:22px;margin-bottom:5px}
+  .qmi:active{transform:scale(.96)}
+  .nb{background:#ef4444;color:#fff;font-size:10px;font-weight:800;min-width:17px;height:17px;
+      border-radius:9px;display:inline-flex;align-items:center;justify-content:center;padding:0 5px;
+      margin-left:4px;vertical-align:middle;line-height:1}
+  .tab{position:relative}
+  .tab .nb{position:absolute;top:4px;right:50%;margin-right:-18px}
+  .qmi{position:relative}
+  .qmi .nb{position:absolute;top:7px;right:9px;margin:0}
+  .new{background:#ef4444;color:#fff;font-size:9px;font-weight:800;padding:2px 5px;border-radius:4px;
+       margin-left:5px;vertical-align:middle}
+  @keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+  .nb,.new{animation:pop .2s ease-out}
+  .icon-new{position:absolute;top:-6px;right:-8px;background:#ef4444;color:#fff;font-size:10px;
+    font-weight:900;padding:3px 7px;border-radius:9px;border:2px solid #f1f5f9;letter-spacing:.5px;
+    animation:pop .2s ease-out}
+  .btn{background:var(--c);color:#fff;border-radius:12px;padding:9px 14px;font-size:13px;font-weight:700}
+  .btn-o{border:1px solid #e2e8f0;color:#475569;border-radius:12px;padding:9px 14px;font-size:13px;font-weight:600;background:#fff}
+  .addbtn{width:100%;background:#fff;border-radius:18px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.06);
+          color:#94a3b8;font-size:14px;text-align:left;margin-bottom:12px}
+  .h{font-weight:800;font-size:14px;margin-bottom:8px}
+
+  /* 로그인 */
+  .gate{padding:70px 24px;text-align:center}
+  .gate .sub{font-size:11px;letter-spacing:.3em;color:#94a3b8;font-weight:700}
+  .gate h1{font-size:30px;font-weight:900;margin:6px 0 30px;letter-spacing:-.5px}
+  .code{width:100%;text-align:center;font-size:26px;letter-spacing:.5em;padding:16px;
+        border:2px solid #e2e8f0;border-radius:16px;outline:none;font-weight:800}
+  .code:focus{border-color:var(--c)}
+
+  /* 대표사진 */
+  .cover{position:relative;height:215px;background:var(--c);overflow:hidden;transition:height .2s}
+  .cover.hero{height:270px}
+  .cover img{width:100%;height:100%;object-fit:cover}
+  .cover-ph{width:100%;height:100%;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;color:rgba(255,255,255,.8)}
+  .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,.1) 55%,rgba(0,0,0,.4))}
+  .ctop{position:absolute;top:0;left:0;right:0;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+  .cbot{position:absolute;bottom:0;left:0;right:0;padding:16px;color:#fff}
+  .chip{background:rgba(255,255,255,.22);backdrop-filter:blur(8px);color:#fff;font-size:12px;
+        padding:7px 12px;border-radius:20px;font-weight:600}
+  .sync{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:4px 9px;border-radius:20px;font-weight:700}
+  .s-on{background:rgba(16,185,129,.9);color:#fff} .s-off{background:rgba(255,255,255,.25);color:#fff}
+
+  /* 투표 */
+  .votes{display:flex;gap:8px}
+  .vbtn{flex:1;padding:10px;border-radius:12px;font-size:13px;font-weight:700;background:#f1f5f9;color:#64748b}
+  .vbtn.on-yes{background:#059669;color:#fff} .vbtn.on-maybe{background:#64748b;color:#fff} .vbtn.on-no{background:#f43f5e;color:#fff}
+  .datebox{background:var(--c);color:#fff;border-radius:11px;width:48px;height:48px;display:flex;
+           flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+
+  /* 달력 */
+  .calnav{width:34px;height:34px;border-radius:10px;background:#f1f5f9;font-size:20px;font-weight:700;color:#475569}
+  .calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+  .calhead{margin-bottom:6px}
+  .calhead>div{text-align:center;font-size:11px;font-weight:700;padding:4px 0}
+  .calcell{aspect-ratio:1;border-radius:10px;background:#fff;display:flex;flex-direction:column;
+           align-items:center;justify-content:flex-start;padding-top:6px;font-size:13px;font-weight:600;
+           border:1.5px solid transparent;position:relative}
+  .calcell.empty{background:transparent}
+  .calcell.today{background:var(--cs);border-color:var(--c)}
+  .calcell.sel{border-color:var(--c);background:#fff;box-shadow:0 0 0 2px var(--c) inset}
+  .caldots{display:flex;gap:2px;margin-top:3px;position:absolute;bottom:6px}
+  .caldot{width:5px;height:5px;border-radius:50%}
+  .eventline{width:100%;background:#fff;border-radius:14px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.06);
+             margin-bottom:8px;display:flex;gap:11px;align-items:center;border:none}
+  .eventline:active{transform:scale(.99)}
+
+  /* 스코어 */
+  .scoretbl{width:100%;border-collapse:collapse;font-size:13px}
+  .scoretbl th{font-size:11px;color:#94a3b8;font-weight:700;padding:6px 4px;text-align:center}
+  .scoretbl td{padding:7px 4px;text-align:center;border-top:1px solid #f1f5f9}
+  .scoretbl td:first-child,.scoretbl th:first-child{text-align:left}
+  .rank{width:22px;height:22px;border-radius:50%;font-size:11px;font-weight:800;display:inline-flex;
+        align-items:center;justify-content:center;background:#f1f5f9;color:#64748b}
+  .rank.r1{background:#fef3c7;color:#92400e} .rank.r2{background:#f1f5f9;color:#475569} .rank.r3{background:#fef2e8;color:#9a3412}
+  .team{border:1px solid #e2e8f0;border-radius:12px;padding:11px;margin-bottom:8px}
+
+  /* 사진 */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .photo{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);position:relative}
+  .photo .thumb{height:112px;width:100%;object-fit:cover;display:block}
+  .thumb-ph{height:112px;background:var(--cs);display:flex;align-items:center;justify-content:center;font-size:30px}
+  .del{position:absolute;top:7px;right:7px;background:rgba(0,0,0,.55);color:#fff;border-radius:50%;width:24px;height:24px;font-size:12px}
+  .star{position:absolute;top:7px;left:7px;background:rgba(0,0,0,.55);color:#fff;border-radius:50%;width:24px;height:24px;font-size:12px}
+  .star.on{background:#f59e0b}
+  .tagbar{display:flex;gap:7px;overflow-x:auto;margin-bottom:12px}
+  .tagbar::-webkit-scrollbar{display:none}
+  .tag{flex-shrink:0;padding:6px 13px;border-radius:20px;font-size:12px;font-weight:700;background:#fff;color:#64748b;border:1px solid #e2e8f0}
+  .tag.on{background:#0f172a;color:#fff;border-color:#0f172a}
+
+  /* 탭 */
+  .tabbar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #f1f5f9;z-index:40;padding-bottom:env(safe-area-inset-bottom)}
+  .tabinner{max-width:440px;margin:0 auto;display:flex}
+  .tab{flex:1;padding:9px 0 10px;display:flex;flex-direction:column;align-items:center;gap:3px;color:#94a3b8;font-size:10px;font-weight:600}
+  .tab.on{color:var(--cd)} .tab svg{width:20px;height:20px}
+
+  /* 모달 */
+  .ov{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+  .sheet{background:#fff;border-radius:24px 24px 0 0;padding:20px;width:100%;max-width:440px;max-height:88vh;overflow-y:auto}
+  .sheet h3{font-size:16px;margin-bottom:14px}
+  .fld{width:100%;border:1px solid #e2e8f0;border-radius:12px;padding:11px 13px;font-size:14px;margin-bottom:10px;outline:none}
+  .fld:focus{border-color:var(--c)}
+  .lbl{font-size:12px;font-weight:700;color:#64748b;margin-bottom:5px;display:block}
+  .seg{display:flex;gap:8px;margin-bottom:10px}
+  .seg button{flex:1;padding:10px;border-radius:12px;font-size:13px;font-weight:700;background:#f1f5f9;color:#64748b}
+  .seg button.on{background:var(--c);color:#fff}
+  .save{width:100%;background:var(--c);color:#fff;padding:13px;border-radius:12px;font-size:14px;font-weight:800;margin-top:4px}
+  .viewer{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:60;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+  .viewer img{max-width:100%;max-height:70vh;border-radius:16px}
+  .hidden{display:none}
+  .note{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:12px;font-size:12px;color:#78350f;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<input type="file" id="fp" accept="image/*" multiple class="hidden">
+<input type="file" id="cp" accept="image/*" class="hidden">
+
+<script>
+/* =======================================================================
+   ① 파이어베이스 설정  —  실시간 연동을 켜려면 이 6줄만 채우세요.
+   비워두면 이 폰에만 저장됩니다(오프라인 모드). 값을 넣으면 전체 회원 실시간 동기화.
+   설정법: 앱 안 → 설정 탭 → "실시간 연동 설정 방법" 참고
+   ======================================================================= */
+const FIREBASE_CONFIG = {
+  apiKey:            "AIzaSyDjsuhcYkhf1DNe-4zANiXXfq2oxKJxClI",
+  authDomain:        "newmillennium-90c4f.firebaseapp.com",
+  databaseURL:       "https://newmillennium-90c4f-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId:         "newmillennium-90c4f",
+  storageBucket:     "newmillennium-90c4f.firebasestorage.app",
+  messagingSenderId: "888984919573",
+  appId:             "1:888984919573:web:2eb14f98eb311c1213f81c"
+};
+/* ② 입장 방식 — 등록된 회원만 입장할 수 있습니다.
+   성명 + 전화번호 뒷 4자리가 명부와 일치해야 통과합니다.
+   처음 오는 분은 [회원등록]으로 등록하면 바로 입장됩니다. */
+/* ===================================================================== */
+
+const LIVE = !!FIREBASE_CONFIG.databaseURL;
+let fdb = null, pushing = false;
+
+const I={
+  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>',
+  wallet:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>',
+  cal:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+  score:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
+  board:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+  photo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>',
+  cam:'<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>',
+  set:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09A1.65 1.65 0 0 0 21 10h.09a2 2 0 0 1 0 4H21a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+};
+
+const VM={yes:{l:'참석'},maybe:{l:'미정'},no:{l:'불참'}};
+const KIND={
+  round:  {l:'라운딩', emoji:'⛳', dot:'#059669', bg:'#ecfdf5', tx:'#047857'},
+  wedding:{l:'결혼',   emoji:'💍', dot:'#ec4899', bg:'#fdf2f8', tx:'#be185d'},
+  funeral:{l:'부고',   emoji:'🕯️', dot:'#64748b', bg:'#f1f5f9', tx:'#334155'},
+  hwangap:{l:'환갑·칠순', emoji:'🎂', dot:'#f59e0b', bg:'#fffbeb', tx:'#b45309'},
+  dol:    {l:'돌잔치', emoji:'🎈', dot:'#8b5cf6', bg:'#f5f3ff', tx:'#6d28d9'},
+  etc:    {l:'기타',   emoji:'📌', dot:'#0ea5e9', bg:'#f0f9ff', tx:'#0369a1'},
+};
+const kindOf=e=>KIND[e.kind||'round']||KIND.round;
+
+const SEED={
+  cover:null,
+  members:[
+    {id:1,name:'김철수',role:'회장',paid:true,hdcp:12,tel:'010-1234-5678'},
+    {id:2,name:'이영희',role:'총무',paid:true,hdcp:18,tel:'010-2345-6789'},
+    {id:3,name:'박민수',role:'회원',paid:false,hdcp:8,tel:'010-3456-7890'},
+    {id:4,name:'정수진',role:'회원',paid:true,hdcp:24,tel:'010-4567-8901'}],
+  ledger:[
+    {id:1,date:'2026-07-01',type:'in',title:'7월 회비 (3인)',amount:300000},
+    {id:2,date:'2026-07-05',type:'out',title:'그린피 정산',amount:180000},
+    {id:3,date:'2026-06-01',type:'in',title:'6월 회비 (4인)',amount:400000},
+    {id:4,date:'2026-06-12',type:'out',title:'회식비',amount:220000}],
+  events:[
+    {id:1,date:'2026-07-26',title:'남서울CC',time:'07:00',place:'남서울CC',kind:'round',votes:{1:'yes',2:'yes',4:'maybe'},teams:[]},
+    {id:2,date:'2026-08-09',title:'친선 대회',time:'08:30',place:'레이크사이드CC',kind:'round',votes:{1:'yes'},teams:[]},
+    {id:3,date:'2026-08-02',title:'박민수 장남 결혼',time:'12:00',place:'강남 웨딩홀',kind:'wedding',mid:3,gift:'축의금 10만원',votes:{},teams:[]}],
+  rounds:[
+    {id:1,date:'2026-06-28',course:'남서울CC',scores:[{mid:1,gross:89},{mid:2,gross:97},{mid:3,gross:81},{mid:4,gross:105}]},
+    {id:2,date:'2026-05-24',course:'레이크사이드CC',scores:[{mid:1,gross:92},{mid:2,gross:99},{mid:3,gross:78},{mid:4,gross:108}]},
+    {id:3,date:'2026-04-19',course:'남서울CC',scores:[{mid:1,gross:95},{mid:3,gross:84},{mid:4,gross:110}]}],
+  posts:[
+    {id:1,author:'이영희',date:'07-15',title:'7월 라운딩 참석 확인 부탁드립니다',body:'26일 남서울CC 티오프 7시입니다. 일정 탭에서 참석 투표 눌러주세요.',pin:true},
+    {id:2,author:'김철수',date:'07-10',title:'회칙 개정 안내',body:'회비 인상 관련 논의 결과를 공유드립니다.',pin:false}],
+  photos:[
+    {id:1,date:'2026-06-28',title:'6월 단체사진',tag:'라운딩',src:null,emoji:'📸'},
+    {id:2,date:'2026-05-24',title:'우승 시상식 - 박민수',tag:'시상',src:null,emoji:'🏆'},
+    {id:3,date:'2026-04-19',title:'봄 개막 라운딩',tag:'라운딩',src:null,emoji:'⛳'}]
+};
+
+let D, S={auth:false,gate:'in',tab:'home',modal:null,viewer:null,tag:'전체',me:1,mid:null,
+          calYM:null,daySel:null};
+try{ D=JSON.parse(localStorage.getItem('nmc'))||structuredClone(SEED); }catch(e){ D=structuredClone(SEED); }
+try{ S.auth = localStorage.getItem('nmc_auth')==='1'; }catch(e){}
+try{ S.me = +localStorage.getItem('nmc_me') || 1; }catch(e){}
+if(S.auth && !D.members.some(m=>m.id===S.me)){ S.auth=false; }
+
+/* 읽음 기록 — 이 폰에만 저장(회원마다 다름) */
+let SEEN={posts:0,photos:0,events:0,rounds:0};
+let firstRun=false;
+try{ const raw=localStorage.getItem('nmc_seen_'+S.me);
+  if(raw) SEEN=Object.assign(SEEN, JSON.parse(raw)); else firstRun=true;
+}catch(e){ firstRun=true; }
+function markSeen(k){
+  const ids=(D[k]||[]).map(x=>x.id);
+  SEEN[k]=ids.length?Math.max(...ids):0;
+  try{ localStorage.setItem('nmc_seen_'+S.me, JSON.stringify(SEEN)); }catch(e){}
+}
+/* 첫 실행이면 기존 글을 모두 읽음 처리 — 안 그러면 전부 NEW로 뜸 */
+if(firstRun){ ['posts','photos','events','rounds'].forEach(markSeen); }
+
+/* 다른 회원으로 로그인하면 그 회원의 읽음 기록을 불러옴 */
+function loadSeen(){
+  SEEN={posts:0,photos:0,events:0,rounds:0};
+  let raw=null;
+  try{ raw=localStorage.getItem('nmc_seen_'+S.me); }catch(e){}
+  if(raw){ try{ SEEN=Object.assign(SEEN, JSON.parse(raw)); }catch(e){} }
+  else { ['posts','photos','events','rounds'].forEach(markSeen); }
+}
+/* 내가 쓴 글은 새 글이 아님 */
+function unread(k){
+  return (D[k]||[]).filter(x=>x.id>(SEEN[k]||0) && x.author!==nameOf(S.me)).length;
+}
+const badge=n=>n?`<span class="nb">${n>9?'9+':n}</span>`:'';
+
+function save(){
+  try{ localStorage.setItem('nmc', JSON.stringify(D)); }catch(e){}
+  if(LIVE && fdb && !pushing){ fdb.ref('club').set(D).catch(()=>{}); }
+}
+
+const won=n=>n.toLocaleString('ko-KR')+'원';
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const bal=()=>D.ledger.reduce((s,r)=>s+(r.type==='in'?r.amount:-r.amount),0);
+const sumBy=t=>D.ledger.filter(r=>r.type===t).reduce((s,r)=>s+r.amount,0);
+const tally=e=>{const v=Object.values(e.votes||{}).filter(Boolean);
+  return{yes:v.filter(x=>x==='yes').length,maybe:v.filter(x=>x==='maybe').length,no:v.filter(x=>x==='no').length}};
+const cover=()=>{const p=D.photos.find(x=>x.id===D.cover&&x.src);return p?p.src:null};
+const nameOf=id=>{const m=D.members.find(x=>x.id===id);return m?m.name:'?'};
+const meObj=()=>D.members.find(m=>m.id===S.me)||D.members[0];
+const today=()=>new Date().toISOString().slice(0,10);
+
+/* 전화번호 — 입력하면서 자동 하이픈 */
+function fmtTel(v){
+  const d=String(v||'').replace(/\D/g,'').slice(0,11);
+  if(d.length<4) return d;
+  if(d.startsWith('02')) return d.length<7 ? d.replace(/(\d{2})(\d+)/,'$1-$2')
+    : d.replace(/(\d{2})(\d{3,4})(\d{0,4})/,'$1-$2-$3').replace(/-$/,'');
+  if(d.length<8) return d.replace(/(\d{3})(\d+)/,'$1-$2');
+  if(d.length===10) return d.replace(/(\d{3})(\d{3})(\d{4})/,'$1-$2-$3');
+  return d.replace(/(\d{3})(\d{4})(\d{0,4})/,'$1-$2-$3').replace(/-$/,'');
+}
+function telOK(v){ const d=String(v||'').replace(/\D/g,''); return d.length>=9 && d.length<=11; }
+function onTel(el){ const p=el.selectionStart, before=el.value;
+  el.value=fmtTel(el.value);
+  if(p===before.length) el.setSelectionRange(el.value.length,el.value.length); }
+
+/* 평균/베스트/랭킹 */
+function stats(mid){
+  const gs=D.rounds.flatMap(r=>r.scores.filter(s=>s.mid===mid).map(s=>s.gross));
+  if(!gs.length) return null;
+  return {n:gs.length, avg:Math.round(gs.reduce((a,b)=>a+b,0)/gs.length), best:Math.min(...gs)};
+}
+function ranking(){
+  return D.members.map(m=>({m,s:stats(m.id)})).filter(x=>x.s)
+    .sort((a,b)=>a.s.avg-b.s.avg);
+}
+/* 핸디캡 기준 자동 조편성 — 실력 균등 분배(스네이크 방식) */
+function makeTeams(e){
+  const going=D.members.filter(m=>e.votes[m.id]==='yes')
+    .sort((a,b)=>(a.hdcp??20)-(b.hdcp??20));
+  const n=Math.max(1,Math.ceil(going.length/4)), t=Array.from({length:n},()=>[]);
+  going.forEach((m,i)=>{ const row=Math.floor(i/n), col=i%n;
+    t[row%2 ? n-1-col : col].push(m.id); });
+  e.teams=t.filter(x=>x.length); save(); r();
+}
+
+const last4=t=>String(t||'').replace(/\D/g,'').slice(-4);
+function gateErr(msg){ const el=document.getElementById('gate-err');
+  if(el){ el.textContent=msg; el.style.display='block'; } }
+
+const A={
+  /* 명부 대조 입장 — 성명 + 전화 뒷 4자리 */
+  login(){
+    const nm=(document.getElementById('gname')?.value||'').trim();
+    const d4=(document.getElementById('gtel')?.value||'').replace(/\D/g,'');
+    if(!nm||d4.length!==4){ gateErr('성명과 전화번호 뒷 4자리를 입력하세요'); return; }
+    const hit=D.members.find(m=>m.name===nm && last4(m.tel)===d4);
+    if(hit){
+      S.auth=true; S.me=hit.id;
+      try{ localStorage.setItem('nmc_auth','1'); localStorage.setItem('nmc_me',S.me); }catch(e){}
+      loadSeen(); r(); return;
+    }
+    gateErr('명부에 없는 정보입니다. 아래에서 회원등록하세요');
+  },
+  signup(){
+    const nm=(document.getElementById('sname')?.value||'').trim();
+    const tel=(document.getElementById('stel')?.value||'').trim();
+    const hd=(document.getElementById('shdcp')?.value||'').trim();
+    if(!nm){ gateErr('성명을 입력하세요'); return; }
+    if(!telOK(tel)){ gateErr('전화번호를 정확히 입력하세요'); return; }
+    const dup=D.members.find(m=>m.tel && m.tel.replace(/\D/g,'')===tel.replace(/\D/g,''));
+    if(dup){ gateErr(dup.name+' 님이 이미 등록된 번호입니다. 위에서 입장하세요'); return; }
+    const id=Date.now();
+    D.members.push({id,name:nm,tel:fmtTel(tel),role:'회원',paid:false,hdcp:hd===''?null:+hd});
+    S.auth=true; S.me=id;
+    try{ localStorage.setItem('nmc_auth','1'); localStorage.setItem('nmc_me',S.me); }catch(e){}
+    loadSeen(); save(); r();
+  },
+  gate(v){ S.gate=v; r(); },
+  logout(){ if(!confirm('로그아웃할까요?'))return; S.auth=false;
+    try{localStorage.removeItem('nmc_auth')}catch(e){} r(); },
+  go(t){ S.tab=t; window.scrollTo(0,0);
+    if(t==='board'){ S.lastSeenPosts=SEEN.posts||0; markSeen('posts'); }
+    if(t==='photo'){ S.lastSeenPhotos=SEEN.photos||0; markSeen('photos'); }
+    if(t==='cal') markSeen('events');
+    if(t==='score') markSeen('rounds');
+    r(); },
+  setMe(id){ S.me=+id; try{localStorage.setItem('nmc_me',S.me)}catch(e){} r(); },
+  pay(id){ const m=D.members.find(x=>x.id===id); m.paid=!m.paid; save(); r(); },
+  vote(eid,c){ const e=D.events.find(x=>x.id===eid);
+    e.votes[S.me]=e.votes[S.me]===c?undefined:c; save(); r(); },
+  teams(eid){ makeTeams(D.events.find(x=>x.id===eid)); },
+  modal(t,id){ S.modal=t; S.mid=id??null; r(); },
+  close(){ S.modal=null; S.mid=null; r(); },
+  view(id){ S.viewer=D.photos.find(p=>p.id===id); r(); },
+  closeView(){ S.viewer=null; r(); },
+  filter(t){ S.tag=t; r(); },
+  delPhoto(id){ D.photos=D.photos.filter(p=>p.id!==id); if(D.cover===id)D.cover=null; save(); r(); },
+  setCover(id){ D.cover=D.cover===id?null:id; save(); r(); },
+  delMember(id){
+    const m=D.members.find(x=>x.id===id); if(!m)return;
+    const admins=D.members.filter(x=>x.role==='총무'||x.role==='회장');
+    if(admins.length<=1 && (m.role==='총무'||m.role==='회장')){
+      alert('마지막 총무/회장은 삭제할 수 없습니다.\n먼저 다른 회원을 총무로 지정하세요.'); return; }
+    if(D.members.length<=1){ alert('마지막 회원은 삭제할 수 없습니다'); return; }
+    if(!confirm(m.name+' 회원을 삭제할까요?'))return;
+    D.members=D.members.filter(x=>x.id!==id);
+    if(S.me===id){ S.auth=false; try{localStorage.removeItem('nmc_auth')}catch(e){} }
+    save(); r(); },
+  call(tel){ if(tel) location.href='tel:'+tel.replace(/\D/g,''); },
+  sms(tel){ if(tel) location.href='sms:'+tel.replace(/\D/g,''); },
+  smsUnpaid(){ const u=D.members.filter(m=>!m.paid&&m.tel);
+    if(!u.length){alert('연락처가 등록된 미납 회원이 없습니다');return}
+    const nums=u.map(m=>m.tel.replace(/\D/g,'')).join(',');
+    const msg=encodeURIComponent('[뉴밀레니엄클럽] 이번 달 회비 납부 부탁드립니다.');
+    location.href=`sms:${nums}?&body=${msg}`; },
+  delRound(id){ if(!confirm('이 라운드 기록을 삭제할까요?'))return;
+    D.rounds=D.rounds.filter(x=>x.id!==id); save(); r(); },
+  delEvent(id){ if(!confirm('이 일정을 삭제할까요?'))return;
+    D.events=D.events.filter(x=>x.id!==id); save(); r(); },
+  calMove(delta){ const[y,m]=S.calYM.split('-').map(Number);
+    const d=new Date(y,m-1+delta,1);
+    S.calYM=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'); S.daySel=null; r(); },
+  calToday(){ S.calYM=today().slice(0,7); S.daySel=today(); r(); },
+  pickDay(dateStr){ S.daySel=S.daySel===dateStr?null:dateStr; r(); },
+  closeDay(){ S.daySel=null; r(); },
+  pickPhotos(){ document.getElementById('fp').click(); },
+  pickCover(){ document.getElementById('cp').click(); },
+  reset(){ if(!confirm('모든 데이터를 초기화합니다. 계속할까요?'))return;
+    try{localStorage.removeItem('nmc')}catch(e){} D=structuredClone(SEED); save(); r(); },
+  share(){ const t=`[뉴밀레니엄클럽]\n잔액 ${won(bal())}\n미납 ${D.members.filter(m=>!m.paid).map(m=>m.name).join(', ')||'없음'}`;
+    if(navigator.share) navigator.share({text:t}).catch(()=>{});
+    else { navigator.clipboard?.writeText(t); alert('현황을 복사했습니다'); } },
+};
+
+document.getElementById('fp').onchange=e=>readImgs(e,false);
+document.getElementById('cp').onchange=e=>readImgs(e,true);
+function readImgs(e,asCover){
+  const files=[...e.target.files]; if(!files.length)return;
+  Promise.all(files.map(f=>new Promise(res=>{
+    const rd=new FileReader();
+    rd.onload=()=>shrink(rd.result,800,src=>res({id:Date.now()+Math.random(),date:today(),
+      title:f.name.replace(/\.[^.]+$/,''),tag:asCover?'대표':'새 사진',src,author:nameOf(S.me)}));
+    rd.readAsDataURL(f);
+  }))).then(items=>{ D.photos=[...items,...D.photos]; if(asCover)D.cover=items[0].id; save(); r(); });
+  e.target.value='';
+}
+/* 사진 축소 — 용량 초과 방지 */
+function shrink(dataUrl,max,cb){
+  const img=new Image();
+  img.onload=()=>{ const sc=Math.min(1,max/Math.max(img.width,img.height));
+    const cv=document.createElement('canvas');
+    cv.width=img.width*sc; cv.height=img.height*sc;
+    cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);
+    cb(cv.toDataURL('image/jpeg',.75)); };
+  img.onerror=()=>cb(dataUrl);
+  img.src=dataUrl;
+}
+
+/* ---------- 로그인 ---------- */
+function clubIcon(size,showNew){
+  return `<div style="position:relative;display:inline-block">
+    <svg width="${size}" height="${size}" viewBox="0 0 180 180" style="border-radius:${size*0.22}px;
+      box-shadow:0 4px 14px rgba(6,95,70,.2)">
+      <rect width="180" height="180" rx="40" fill="#f8fafc"/>
+      <rect x="10" y="10" width="160" height="160" rx="32" fill="none" stroke="#065f46" stroke-width="4"/>
+      <circle cx="90" cy="72" r="30" fill="#065f46"/>
+      <circle cx="79" cy="62" r="3.5" fill="#a7f3d0"/><circle cx="93" cy="60" r="3.5" fill="#a7f3d0"/>
+      <circle cx="102" cy="70" r="3.5" fill="#a7f3d0"/><circle cx="85" cy="76" r="3.5" fill="#a7f3d0"/>
+      <circle cx="98" cy="82" r="3.5" fill="#a7f3d0"/>
+      <text x="90" y="128" font-family="Georgia,serif" font-size="38" font-weight="bold"
+        fill="#065f46" text-anchor="middle">NMC</text>
+      <text x="90" y="150" font-family="Helvetica,Arial" font-size="11" fill="#059669"
+        text-anchor="middle" letter-spacing="2">GOLF CLUB</text>
+    </svg>
+    ${showNew?`<span class="icon-new">NEW</span>`:''}
+  </div>`;
+}
+
+function vGate(){
+  const head=`<div class="sub">SINCE 2000</div>
+    <h1>뉴밀레니엄클럽</h1>
+    <div style="margin-bottom:22px">${clubIcon(84,false)}</div>`;
+
+  if(S.gate==='up') return `<div class="gate">${head}
+    <div class="card" style="text-align:left">
+      <div class="h">회원등록</div>
+      <label class="lbl">성명</label>
+      <input class="fld" id="sname" placeholder="예: 홍길동">
+      <label class="lbl">전화번호</label>
+      <input class="fld" id="stel" type="tel" inputmode="numeric" maxlength="13"
+             placeholder="010-0000-0000" oninput="onTel(this)">
+      <label class="lbl">핸디캡 <span class="tiny" style="font-weight:400">(선택 · 조편성에 사용)</span></label>
+      <input class="fld" id="shdcp" type="number" inputmode="numeric" placeholder="예: 15"
+             onkeydown="if(event.key==='Enter')A.signup()">
+      <div id="gate-err" style="display:none;color:#e11d48;font-size:13px;margin-bottom:8px"></div>
+      <button class="save" onclick="A.signup()">등록하고 입장</button>
+    </div>
+    <button class="btn-o" style="width:100%" onclick="A.gate('in')">← 이미 회원이신가요?</button>
+    <p class="tiny" style="margin-top:14px;line-height:1.7">
+      등록하면 바로 입장됩니다<br>다음부터는 성명과 전화 뒷 4자리로 들어오세요</p>
+  </div>`;
+
+  return `<div class="gate">${head}
+    <div class="card" style="text-align:left">
+      <div class="h">회원 입장</div>
+      <label class="lbl">성명</label>
+      <input class="fld" id="gname" placeholder="예: 김철수"
+             onkeydown="if(event.key==='Enter')document.getElementById('gtel').focus()">
+      <label class="lbl">전화번호 뒷 4자리</label>
+      <input class="fld" id="gtel" inputmode="numeric" maxlength="4" placeholder="0000"
+             style="letter-spacing:.3em;text-align:center;font-weight:800"
+             onkeydown="if(event.key==='Enter')A.login()">
+      <div id="gate-err" style="display:none;color:#e11d48;font-size:13px;margin-bottom:8px"></div>
+      <button class="save" onclick="A.login()">입장</button>
+    </div>
+    <button class="btn-o" style="width:100%" onclick="A.gate('up')">처음이신가요? 회원등록</button>
+    <p class="tiny" style="margin-top:16px;line-height:1.7">
+      뉴밀레니엄클럽 회원 전용<br>문의: 총무 ${esc(D.members.find(m=>m.role==='총무')?.name||'')}</p>
+  </div>`;
+}
+
+/* ---------- 대표사진 ---------- */
+function vCover(){
+  const cv=cover(), hero=S.tab==='home';
+  return `<div class="cover ${hero?'hero':''}">
+    ${cv?`<img src="${cv}">`:`<div class="cover-ph">${I.cam}<div style="font-size:12px">대표사진을 등록하세요</div></div>`}
+    <div class="shade"></div>
+    <div class="ctop">
+      <span class="sync ${LIVE?'s-on':'s-off'}">● ${LIVE?'실시간 연동중':'이 폰에만 저장'}</span>
+      <button class="chip" onclick="A.pickCover()">${cv?'사진 변경':'대표사진'}</button>
+    </div>
+    <div class="cbot">
+      <div style="font-size:11px;letter-spacing:.25em;opacity:.85;font-weight:700">SINCE 2000</div>
+      <div style="font-size:${hero?'26':'22'}px;font-weight:900;margin-top:3px;letter-spacing:-.5px">뉴밀레니엄클럽</div>
+      ${hero?`<div style="display:flex;gap:14px;margin-top:9px;font-size:12px;opacity:.9">
+        <span>⛳ 회원 ${D.members.length}명</span>
+        <span>🏌 라운드 ${D.rounds.length}회</span>
+        <span>📷 사진 ${D.photos.length}장</span></div>`
+      :`<div style="font-size:12px;opacity:.85;margin-top:3px">⛳ 회원 ${D.members.length}명 · 잔액 ${won(bal())}</div>`}
+    </div>
+  </div>`;
+}
+
+/* ---------- 홈 ---------- */
+function vHome(){
+  const unpaid=D.members.filter(m=>!m.paid), e0=D.events[0], my=stats(S.me);
+  const pin=D.posts.find(p=>p.pin)||D.posts[0];
+  const gal=D.photos.slice(0,4);
+  const dday=e0?Math.ceil((new Date(e0.date)-new Date(today()))/864e5):null;
+  const going=e0?D.members.filter(m=>e0.votes[m.id]==='yes'):[];
+
+  const uP=unread('posts'), uPh=unread('photos'), uE=unread('events'), uR=unread('rounds');
+  const totalNew=uP+uPh+uE+uR;
+
+  return `
+  <div class="card" style="padding:16px 18px">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="display:flex;align-items:center;gap:12px">
+        ${clubIcon(46,totalNew>0)}
+        <div><div style="font-size:15px;font-weight:800">${esc(nameOf(S.me))} 님</div>
+          <div class="tiny">${esc(meObj().role)}${my?` · 평균 ${my.avg}타`:''}</div></div>
+      </div>
+      ${my?`<div style="text-align:right">
+        <div class="tiny">베스트</div>
+        <div style="font-size:20px;font-weight:900;color:var(--cd)">${my.best}</div></div>`:''}
+    </div>
+  </div>
+
+  ${totalNew?`<div class="card" style="background:#fef2f2;border:1px solid #fecaca">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:${totalNew?'8px':'0'}">
+      <span style="font-size:17px">🔔</span>
+      <span style="font-weight:800;font-size:14px;color:#991b1b">새 소식 ${totalNew}건</span></div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
+      ${uP?`<button class="pill p-no" onclick="A.go('board')">📢 새 글 ${uP}</button>`:''}
+      ${uE?`<button class="pill p-no" onclick="A.go('cal')">📅 새 일정 ${uE}</button>`:''}
+      ${uPh?`<button class="pill p-no" onclick="A.go('photo')">📷 새 사진 ${uPh}</button>`:''}
+      ${uR?`<button class="pill p-no" onclick="A.go('score')">🏆 새 스코어 ${uR}</button>`:''}
+    </div>
+  </div>`:''}
+
+  <div class="qm">
+    <button class="qmi" onclick="A.go('cal')"><span>📅</span>라운딩 일정${badge(uE)}</button>
+    <button class="qmi" onclick="A.go('score')"><span>🏆</span>스코어 랭킹${badge(uR)}</button>
+    <button class="qmi" onclick="A.go('photo')"><span>📷</span>사진첩${badge(uPh)}</button>
+    <button class="qmi" onclick="A.go('money')"><span>💰</span>회비 내역</button>
+  </div>
+
+  ${pin?`<div class="card" onclick="A.go('board')">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px">
+      <div class="h" style="margin:0">📢 공지사항${badge(uP)}</div>
+      <span class="tiny">더보기 ›</span></div>
+    <div style="font-size:14px;font-weight:700">${esc(pin.title)}${pin.id>(SEEN.posts||0)&&pin.author!==nameOf(S.me)?'<span class="new">NEW</span>':''}</div>
+    <div class="muted" style="margin-top:4px;overflow:hidden;display:-webkit-box;
+      -webkit-line-clamp:2;-webkit-box-orient:vertical">${esc(pin.body)}</div>
+    <div class="tiny" style="margin-top:6px">${esc(pin.author)} · ${pin.date}</div>
+  </div>`:''}
+
+  ${e0?`<div class="card" style="border:2px solid var(--c)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <span class="pill" style="background:var(--c);color:#fff">다음 라운딩</span>
+      ${dday!=null&&dday>=0?`<span style="font-size:13px;font-weight:900;color:var(--cd)">
+        ${dday===0?'오늘':'D-'+dday}</span>`:''}
+    </div>
+    <div style="font-size:17px;font-weight:800">${esc(e0.title)}</div>
+    <div class="muted" style="margin-top:5px;line-height:1.8">
+      📍 ${esc(e0.place||'장소 미정')}<br>🕐 ${+e0.date.slice(5,7)}월 ${+e0.date.slice(8)}일 ${e0.time}</div>
+    ${going.length?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:10px">
+      ${going.map(m=>`<span class="pill p-ok">${esc(m.name)}</span>`).join('')}</div>`:''}
+    <div style="margin-top:12px">${vVote(e0)}</div>
+    <div class="tiny" style="margin-top:8px">참석 ${tally(e0).yes} · 미정 ${tally(e0).maybe} · 불참 ${tally(e0).no}</div>
+  </div>`:`<div class="card" style="text-align:center;padding:26px;color:#94a3b8;font-size:14px">
+    예정된 라운딩이 없습니다<br><button class="btn" style="margin-top:10px" onclick="A.go('cal')">일정 만들기</button></div>`}
+
+  ${gal.length?`<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px">
+      <div class="h" style="margin:0">📷 최근 사진</div>
+      <span class="tiny" onclick="A.go('photo')">전체보기 ›</span></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">
+      ${gal.map(p=>`<div onclick="A.view(${p.id})" style="aspect-ratio:1;border-radius:9px;overflow:hidden;
+        background:var(--cs);display:flex;align-items:center;justify-content:center;font-size:20px">
+        ${p.src?`<img src="${p.src}" style="width:100%;height:100%;object-fit:cover">`:(p.emoji||'🖼')}
+      </div>`).join('')}</div>
+  </div>`:''}
+
+  <div class="card" onclick="A.go('money')">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div><div class="tiny">모임 잔액</div>
+        <div style="font-size:20px;font-weight:900;margin-top:2px">${won(bal())}</div></div>
+      <div style="text-align:right">
+        <div class="tiny">이번 달 미납</div>
+        <div style="font-size:20px;font-weight:900;margin-top:2px;color:${unpaid.length?'#e11d48':'#059669'}">
+          ${unpaid.length?unpaid.length+'명':'없음'}</div></div>
+    </div>
+    ${unpaid.length?`<div class="tiny" style="margin-top:8px;color:#b45309">${unpaid.map(m=>esc(m.name)).join(', ')}</div>`:''}
+    <div class="tiny" style="margin-top:8px">👥 회원 명부 ${D.members.length}명 · 회비 관리 ›</div>
+  </div>
+
+  <div class="tiny" style="text-align:center;padding:6px 0 2px;line-height:1.8">
+    뉴밀레니엄클럽 · SINCE 2000<br>⛳ 함께 걸어온 스물여섯 해</div>`;
+}
+
+function vVote(e){
+  const mine=e.votes[S.me]||'';
+  return `<div class="votes">${['yes','maybe','no'].map(k=>
+    `<button class="vbtn ${mine===k?'on-'+k:''}" onclick="A.vote(${e.id},'${k}')">${VM[k].l}</button>`).join('')}</div>`;
+}
+
+/* ---------- 재무 ---------- */
+function vMoney(){
+  const unpaid=D.members.filter(m=>!m.paid);
+  return `<div class="card" style="display:flex;justify-content:space-between;align-items:center">
+    <div><div class="muted">잔액</div><div style="font-size:22px;font-weight:900">${won(bal())}</div></div>
+    <button class="btn" onclick="A.modal('ledger')">+ 입력</button></div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <div class="h" style="margin:0">👥 회원 명부 · 회비 <span class="tiny">${D.members.length}명</span></div>
+      <button class="btn-o" style="padding:5px 10px;font-size:12px" onclick="A.modal('member')">+ 등록</button></div>
+    ${unpaid.length&&unpaid.some(m=>m.tel)?`<button class="btn-o" style="width:100%;margin-bottom:10px"
+      onclick="A.smsUnpaid()">문자보내기</button>`:''}
+    ${D.members.map(m=>`<div style="display:flex;align-items:center;gap:9px;padding:10px 0;border-bottom:1px solid #f8fafc">
+      <div class="avatar">${esc(m.name[0])}</div>
+      <div style="flex:1;min-width:0" onclick="A.modal('member',${m.id})">
+        <div style="font-size:14px;font-weight:600">${esc(m.name)}
+          ${m.role!=='회원'?`<span class="badge">${esc(m.role)}</span>`:''}</div>
+        <div class="tiny" style="margin-top:2px">${m.tel?esc(m.tel):'연락처 없음'} · 핸디 ${m.hdcp??'-'}</div>
+      </div>
+      ${m.tel?`<button class="icb" onclick="A.call('${esc(m.tel)}')">📞</button>
+              <button class="icb" onclick="A.sms('${esc(m.tel)}')">💬</button>`:''}
+      <button class="pill ${m.paid?'p-ok':'p-no'}" onclick="A.pay(${m.id})">${m.paid?'납부':'미납'}</button>
+    </div>`).join('')}
+    <div class="tiny" style="margin-top:9px">이름을 누르면 정보를 수정할 수 있습니다</div>
+  </div>
+
+  <div class="card">
+    <div class="h">거래 내역</div>
+    ${D.ledger.map(x=>`<div class="row" style="border-bottom:1px solid #f8fafc">
+      <div><div style="font-size:14px">${esc(x.title)}</div><div class="tiny">${x.date}</div></div>
+      <div style="font-size:14px;font-weight:800;color:${x.type==='in'?'#059669':'#f43f5e'}">
+        ${x.type==='in'?'+':'-'}${won(x.amount)}</div></div>`).join('')}
+  </div>`;
+}
+
+/* ---------- 일정: 달력 ---------- */
+function vCal(){
+  if(!S.calYM) S.calYM=today().slice(0,7);
+  const[y,m]=S.calYM.split('-').map(Number);
+  const first=new Date(y,m-1,1), startDow=first.getDay();
+  const days=new Date(y,m,0).getDate();
+  const todayStr=today();
+
+  // 날짜별 이벤트 매핑
+  const byDate={};
+  D.events.forEach(e=>{ (byDate[e.date]=byDate[e.date]||[]).push(e); });
+
+  const cells=[];
+  for(let i=0;i<startDow;i++) cells.push(null);
+  for(let d=1;d<=days;d++) cells.push(`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`);
+  while(cells.length%7) cells.push(null);
+
+  const dow=['일','월','화','수','목','금','토'];
+  const monthEvents=D.events.filter(e=>e.date.slice(0,7)===S.calYM)
+    .sort((a,b)=>a.date.localeCompare(b.date));
+
+  return `
+  <div class="card" style="padding:14px 12px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <button class="calnav" onclick="A.calMove(-1)">‹</button>
+      <div style="font-size:16px;font-weight:900">${y}년 ${m}월</div>
+      <button class="calnav" onclick="A.calMove(1)">›</button>
+    </div>
+    <div class="calgrid calhead">
+      ${dow.map((d,i)=>`<div style="color:${i===0?'#e11d48':i===6?'#2563eb':'#94a3b8'}">${d}</div>`).join('')}
+    </div>
+    <div class="calgrid">
+      ${cells.map(ds=>{
+        if(!ds) return `<div class="calcell empty"></div>`;
+        const d=+ds.slice(8), dw=new Date(ds).getDay();
+        const evs=byDate[ds]||[];
+        const isToday=ds===todayStr, isSel=ds===S.daySel;
+        return `<button class="calcell ${isToday?'today':''} ${isSel?'sel':''}" onclick="A.pickDay('${ds}')">
+          <span style="color:${dw===0?'#e11d48':dw===6?'#2563eb':'#334155'}">${d}</span>
+          ${evs.length?`<div class="caldots">${evs.slice(0,3).map(e=>
+            `<span class="caldot" style="background:${kindOf(e).dot}"></span>`).join('')}</div>`:''}
+        </button>`;
+      }).join('')}
+    </div>
+  </div>
+
+  <div style="display:flex;gap:8px;margin-bottom:12px">
+    <button class="btn" style="flex:1" onclick="A.modal('event')">＋ 라운딩</button>
+    <button class="btn-o" style="flex:1;font-weight:700" onclick="A.modal('gyeongjo')">＋ 경조사</button>
+    <button class="btn-o" style="padding:9px 12px" onclick="A.calToday()">오늘</button>
+  </div>
+
+  ${S.daySel?vDayPopup():`
+    <div class="tiny" style="text-align:center;margin:2px 0 12px">날짜를 누르면 그날 일정이 열립니다</div>
+    <div class="h" style="margin-left:2px">${m}월 일정</div>
+    ${monthEvents.length?monthEvents.map(e=>vEventLine(e)).join('')
+      :`<div class="card" style="text-align:center;padding:30px;color:#94a3b8;font-size:14px">이번 달 일정이 없습니다</div>`}
+  `}`;
+}
+
+/* 한 줄 일정 (탭하면 상세 팝업) */
+function vEventLine(e){
+  const k=kindOf(e);
+  return `<button class="eventline" onclick="A.pickDay('${e.date}')">
+    <div class="datebox" style="background:${k.dot}"><div style="font-size:10px">${+e.date.slice(5,7)}월</div>
+      <div style="font-size:15px;font-weight:900">${+e.date.slice(8)}</div></div>
+    <div style="flex:1;text-align:left;min-width:0">
+      <div style="font-size:14px;font-weight:700">${k.emoji} ${esc(e.title)}</div>
+      <div class="tiny" style="margin-top:2px">${e.time||''}${e.place?' · '+esc(e.place):''}</div>
+    </div>
+    <span class="pill" style="background:${k.bg};color:${k.tx}">${k.l}</span>
+  </button>`;
+}
+
+/* 날짜 탭 → 그날 일정 팝업 */
+function vDayPopup(){
+  const evs=D.events.filter(e=>e.date===S.daySel).sort((a,b)=>(a.time||'').localeCompare(b.time||''));
+  const d=new Date(S.daySel), md=`${d.getMonth()+1}월 ${d.getDate()}일`;
+  const dowName=['일','월','화','수','목','금','토'][d.getDay()];
+  return `<div class="ov" onclick="A.closeDay()">
+    <div class="sheet" onclick="event.stopPropagation()" style="max-height:82vh">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+        <h3 style="margin:0">${md} (${dowName})</h3>
+        <button class="tiny" style="font-size:20px" onclick="A.closeDay()">✕</button></div>
+      ${evs.length?evs.map(e=>vEventCard(e)).join('')
+        :`<div style="text-align:center;padding:24px;color:#94a3b8;font-size:14px">이 날 일정이 없습니다</div>`}
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button class="btn" style="flex:1" onclick="A.modal('event')">＋ 라운딩</button>
+        <button class="btn-o" style="flex:1;font-weight:700" onclick="A.modal('gyeongjo')">＋ 경조사</button>
+      </div>
+    </div></div>`;
+}
+
+/* 일정 상세 카드 (라운딩=투표+조편성 / 경조사=회원·부조금) */
+function vEventCard(e){
+  const k=kindOf(e);
+  if((e.kind||'round')==='round'){
+    const t=tally(e);
+    const voters=Object.entries(e.votes||{}).filter(([,v])=>v);
+    return `<div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">
+        <div style="font-size:15px;font-weight:800">${k.emoji} ${esc(e.title)}</div>
+        <button class="btn-o" style="padding:4px 10px;font-size:12px" onclick="A.modal('event',${e.id})">수정</button></div>
+      <div class="tiny" style="margin-bottom:10px">${e.time}${e.place?' · '+esc(e.place):''}</div>
+      ${vVote(e)}
+      <div style="display:flex;gap:6px;margin-top:11px">
+        <span class="pill p-ok">참석 ${t.yes}</span>
+        <span class="pill p-mid">미정 ${t.maybe}</span>
+        <span class="pill p-no">불참 ${t.no}</span></div>
+      ${voters.length?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:9px;padding-top:9px;border-top:1px solid #f8fafc">
+        ${voters.map(([mid,v])=>{const m=D.members.find(x=>x.id===+mid);if(!m)return'';
+          return `<span class="pill ${v==='yes'?'p-ok':v==='no'?'p-no':'p-mid'}">${esc(m.name)}</span>`}).join('')}</div>`:''}
+      <div style="margin-top:11px;padding-top:11px;border-top:1px solid #f8fafc">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:${e.teams&&e.teams.length?'8px':'0'}">
+          <span style="font-size:13px;font-weight:800">조편성</span>
+          <button class="btn-o" style="padding:5px 10px;font-size:12px" onclick="A.teams(${e.id})">핸디 기준 자동편성</button></div>
+        ${(e.teams||[]).map((tm,i)=>`<div class="team">
+          <div style="font-size:12px;font-weight:800;color:#047857;margin-bottom:5px">${i+1}조</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px">
+            ${tm.map(id=>{const m=D.members.find(x=>x.id===id);return m?
+              `<span class="pill p-mid">${esc(m.name)} <span style="opacity:.6">${m.hdcp??'-'}</span></span>`:''}).join('')}</div>
+        </div>`).join('')}
+      </div>
+    </div>`;
+  }
+  // 경조사 카드
+  const who=e.mid?D.members.find(x=>x.id===e.mid):null;
+  return `<div class="card" style="background:${k.bg};border:1px solid ${k.dot}33">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+      <div><span class="pill" style="background:${k.dot};color:#fff">${k.emoji} ${k.l}</span></div>
+      <button class="btn-o" style="padding:4px 10px;font-size:12px" onclick="A.modal('gyeongjo',${e.id})">수정</button></div>
+    <div style="font-size:16px;font-weight:800;color:${k.tx}">${esc(e.title)}</div>
+    <div style="margin-top:8px;font-size:13px;color:#475569;line-height:1.9">
+      ${who?`👤 ${esc(who.name)}${who.tel?` <span class="tiny">${esc(who.tel)}</span>`:''}<br>`:''}
+      ${e.time?`🕐 ${e.time}<br>`:''}
+      ${e.place?`📍 ${esc(e.place)}<br>`:''}
+      ${e.gift?`💰 ${esc(e.gift)}`:''}
+    </div>
+    ${who&&who.tel?`<div style="display:flex;gap:8px;margin-top:10px">
+      <button class="btn-o" style="flex:1" onclick="A.call('${esc(who.tel)}')">📞 전화</button>
+      <button class="btn-o" style="flex:1" onclick="A.sms('${esc(who.tel)}')">💬 문자</button></div>`:''}
+  </div>`;
+}
+
+/* ---------- 스코어 ---------- */
+function vScore(){
+  const rk=ranking();
+  return `<button class="addbtn" onclick="A.modal('round')">＋ 라운드 스코어 입력</button>
+  ${rk.length?`<div class="card">
+    <div class="h">🏆 평균타수 랭킹</div>
+    <table class="scoretbl">
+      <tr><th>회원</th><th>라운드</th><th>평균</th><th>베스트</th><th>핸디</th></tr>
+      ${rk.map((x,i)=>`<tr>
+        <td><span class="rank ${i<3?'r'+(i+1):''}">${i+1}</span> ${esc(x.m.name)}</td>
+        <td>${x.s.n}</td><td style="font-weight:800">${x.s.avg}</td>
+        <td style="color:#047857;font-weight:700">${x.s.best}</td><td>${x.m.hdcp??'-'}</td></tr>`).join('')}
+    </table></div>`:''}
+  ${D.rounds.map(rd=>{
+    const sorted=[...rd.scores].sort((a,b)=>a.gross-b.gross);
+    return `<div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <div><div style="font-size:14px;font-weight:800">${esc(rd.course)}</div>
+          <div class="tiny">${rd.date} · ${rd.scores.length}명</div></div>
+        <button class="btn-o" style="padding:4px 10px;font-size:12px" onclick="A.modal('round',${rd.id})">수정</button></div>
+      <table class="scoretbl">
+        ${sorted.map((s,i)=>`<tr>
+          <td><span class="rank ${i===0?'r1':''}">${i+1}</span> ${esc(nameOf(s.mid))}</td>
+          <td style="text-align:right;font-weight:800">${s.gross}</td>
+          <td style="text-align:right;width:56px;color:#64748b">${s.gross>72?'+'+(s.gross-72):s.gross-72}</td>
+        </tr>`).join('')}
+      </table></div>`}).join('')}
+  ${!D.rounds.length?`<div class="card" style="text-align:center;padding:40px;color:#94a3b8;font-size:14px">
+    아직 기록된 라운드가 없습니다</div>`:''}`;
+}
+
+/* ---------- 게시판 ---------- */
+function vBoard(){
+  const mark=S.lastSeenPosts||0;
+  return `<button class="addbtn" onclick="A.modal('post')">＋ 새 글 작성</button>
+  ${D.posts.map(p=>`<div class="card">
+    <div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
+      ${p.pin?`<span class="pill p-no">공지</span>`:''}
+      <span style="font-weight:800;font-size:14px">${esc(p.title)}</span>
+      ${p.id>mark&&p.author!==nameOf(S.me)?'<span class="new">NEW</span>':''}</div>
+    <div style="font-size:14px;color:#475569;line-height:1.65;white-space:pre-wrap">${esc(p.body)}</div>
+    <div class="tiny" style="margin-top:8px">${esc(p.author)} · ${p.date}</div></div>`).join('')}
+  ${!D.posts.length?`<div class="card" style="text-align:center;padding:40px;color:#94a3b8;font-size:14px">
+    아직 글이 없습니다</div>`:''}`;
+}
+
+/* ---------- 사진첩 ---------- */
+function vPhoto(){
+  const tags=['전체',...new Set(D.photos.map(p=>p.tag))];
+  const list=S.tag==='전체'?D.photos:D.photos.filter(p=>p.tag===S.tag);
+  return `<div class="card" style="display:flex;justify-content:space-between;align-items:center">
+    <span class="muted">🏆 사진 ${D.photos.length}장</span>
+    <button class="btn" onclick="A.pickPhotos()">↑ 업로드</button></div>
+  <div class="tagbar">${tags.map(t=>`<button class="tag ${S.tag===t?'on':''}" onclick="A.filter('${esc(t)}')">${esc(t)}</button>`).join('')}</div>
+  ${list.length?`<div class="grid">${list.map(p=>`<div class="photo">
+      <div onclick="A.view(${p.id})">${p.src?`<img class="thumb" src="${p.src}">`:`<div class="thumb-ph">${p.emoji||'🖼'}</div>`}</div>
+      ${p.id>(S.lastSeenPhotos||0)&&p.author!==nameOf(S.me)?'<span class="new" style="position:absolute;bottom:44px;right:7px;margin:0">NEW</span>':''}
+      ${p.src?`<button class="star ${D.cover===p.id?'on':''}" onclick="A.setCover(${p.id})">★</button>`:''}
+      <button class="del" onclick="A.delPhoto(${p.id})">✕</button>
+      <div style="padding:10px">
+        <div style="font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(p.title)}</div>
+        <div class="tiny" style="margin-top:3px">${p.date} · ${esc(p.tag)}</div></div>
+    </div>`).join('')}</div>`
+  :`<div class="card" style="text-align:center;padding:40px;color:#94a3b8;font-size:14px">사진이 없습니다</div>`}
+  <div class="tiny" style="text-align:center;margin-top:14px">★를 누르면 대표사진으로 지정됩니다</div>`;
+}
+
+/* ---------- 설정 ---------- */
+function vSet(){
+  return `<div class="card">
+    <div class="h">내 계정</div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="avatar">${esc(nameOf(S.me)[0])}</div>
+      <div><div style="font-size:15px;font-weight:700">${esc(nameOf(S.me))}</div>
+        <div class="tiny">${esc(meObj().tel||'')} · ${esc(meObj().role||'회원')}</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <div class="h" style="margin:0">👥 회원 관리 <span class="tiny">${D.members.length}명</span></div>
+      <button class="btn" style="padding:6px 12px;font-size:13px" onclick="A.modal('member')">+ 대리 등록</button></div>
+    <div class="tiny" style="margin-bottom:10px">회원 대신 등록하거나, 이름을 눌러 정보를 수정할 수 있습니다</div>
+    ${D.members.map(m=>`<div style="display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid #f8fafc">
+      <div class="avatar">${esc(m.name[0])}</div>
+      <div style="flex:1;min-width:0" onclick="A.modal('member',${m.id})">
+        <div style="font-size:14px;font-weight:600">${esc(m.name)}
+          ${m.role!=='회원'?`<span class="badge">${esc(m.role)}</span>`:''}</div>
+        <div class="tiny" style="margin-top:2px">${m.tel?esc(m.tel):'연락처 없음'} · 핸디 ${m.hdcp??'-'}</div>
+      </div>
+      <button class="btn-o" style="padding:4px 10px;font-size:12px" onclick="A.modal('member',${m.id})">수정</button>
+    </div>`).join('')}
+  </div>
+
+  <div class="card">
+    <div class="h">${LIVE?'✅ 실시간 연동 켜짐':'⚠️ 실시간 연동 꺼짐'}</div>
+    ${LIVE
+      ? `<div class="muted" style="line-height:1.7">전체 회원이 같은 데이터를 실시간으로 보고 있습니다.
+          누군가 회비를 체크하거나 투표하면 모두의 화면이 즉시 바뀝니다.</div>`
+      : `<div class="note">지금은 <b>이 폰에만</b> 저장됩니다. 다른 회원 폰에는 반영되지 않습니다.
+          아래 순서로 5분이면 전체 연동이 켜집니다.</div>
+        <div style="font-size:13px;line-height:1.9;margin-top:12px;color:#334155">
+          <b>1.</b> console.firebase.google.com 접속 → 구글 로그인<br>
+          <b>2.</b> 프로젝트 만들기 → 이름 <code>newmillennium</code> → 애널리틱스 끄기<br>
+          <b>3.</b> 왼쪽 메뉴 <b>빌드 → Realtime Database</b> → 데이터베이스 만들기<br>
+          &nbsp;&nbsp;&nbsp;위치 <b>싱가포르</b>, 규칙은 <b>테스트 모드</b> 선택<br>
+          <b>4.</b> 프로젝트 개요 옆 <b>⚙️ → 프로젝트 설정</b> → 아래로 스크롤<br>
+          &nbsp;&nbsp;&nbsp;<b>&lt;/&gt;</b> 웹 아이콘 클릭 → 앱 등록<br>
+          <b>5.</b> 화면에 나오는 <code>firebaseConfig</code> 6~7줄 복사<br>
+          <b>6.</b> 이 HTML 파일을 메모장으로 열고 맨 위 <code>FIREBASE_CONFIG</code>에 붙여넣기 → 저장
+        </div>
+        <div class="note" style="margin-top:12px">
+          <b>보안 주의</b><br>테스트 모드는 30일 후 자동으로 막힙니다. 그 전에 규칙 탭에서
+          <code>".read": true, ".write": true</code> 로 바꾸면 계속 쓸 수 있지만,
+          링크를 아는 사람은 누구나 볼 수 있게 됩니다.<br><br>
+          이 앱은 <b>명부 대조</b>로 막습니다 — 성명과 전화 뒷 4자리가 맞아야 입장.
+          다만 회원의 이름과 번호를 아는 사람은 들어올 수 있으므로,
+          <b>완벽한 보안은 아닙니다.</b> 회비 액수 외에 민감한 정보는 올리지 마세요.
+        </div>
+        <div class="tiny" style="margin-top:10px">무료 등급으로 30명 모임은 비용이 들지 않습니다.</div>`}
+  </div>
+  <div class="card">
+    <div class="h">회원 전체에게 배포하는 법</div>
+    <div class="muted" style="line-height:1.8">
+      ① 이 HTML 파일을 카톡 단톡방에 올립니다<br>
+      ② 회원들은 파일을 받아 브라우저로 엽니다<br>
+      ③ 아이폰: 공유 → <b>홈 화면에 추가</b><br>
+      &nbsp;&nbsp;&nbsp;안드로이드: 메뉴 → <b>홈 화면에 추가</b><br>
+      ④ 앱 아이콘처럼 바로 실행됩니다
+    </div>
+  </div>
+  <div class="card">
+    <button class="btn-o" style="width:100%;margin-bottom:8px" onclick="A.logout()">로그아웃</button>
+    <button class="btn-o" style="width:100%;color:#e11d48;border-color:#fecdd3" onclick="A.reset()">데이터 초기화</button>
+  </div>
+  <div class="tiny" style="text-align:center;padding:8px 0 4px">뉴밀레니엄클럽 · SINCE 2000</div>`;
+}
+
+/* ---------- 모달 ---------- */
+let F={type:'in'};
+function vModal(){
+  const t=S.modal;
+  const title={ledger:'거래 입력',event:S.mid?'일정 수정':'라운딩 일정',post:'새 글',
+    member:S.mid?'회원 정보 수정':'회원 등록',round:S.mid?'스코어 수정':'라운드 스코어',
+    gyeongjo:S.mid?'경조사 수정':'경조사 등록'}[t];
+  const defDate=S.daySel||today();
+  let b='';
+  if(t==='ledger') b=`
+    <div class="seg">
+      <button class="${F.type!=='out'?'on':''}" onclick="F.type='in';r()">수입</button>
+      <button class="${F.type==='out'?'on':''}" onclick="F.type='out';r()">지출</button></div>
+    <input class="fld" id="f1" placeholder="내용 (예: 7월 회비)">
+    <input class="fld" id="f2" type="number" inputmode="numeric" placeholder="금액">
+    <input class="fld" id="f3" type="date" value="${today()}">`;
+  if(t==='event'){ const e=S.mid?D.events.find(x=>x.id===S.mid):null;
+    b=`
+    <label class="lbl">일정 제목</label>
+    <input class="fld" id="f1" placeholder="예: 7월 정기 라운딩" value="${e?esc(e.title):''}">
+    <label class="lbl">골프장</label>
+    <input class="fld" id="f4" placeholder="예: 남서울CC" value="${e?esc(e.place||''):''}">
+    <label class="lbl">날짜</label>
+    <input class="fld" id="f3" type="date" value="${e?e.date:defDate}">
+    <label class="lbl">시간</label>
+    <input class="fld" id="f2" type="time" value="${e?e.time:'07:00'}">
+    ${e?`<button class="btn-o" style="width:100%;color:#e11d48;border-color:#fecdd3;margin-top:2px"
+        onclick="A.close();A.delEvent(${e.id})">이 일정 삭제</button>`:''}`; }
+  if(t==='gyeongjo'){ const e=S.mid?D.events.find(x=>x.id===S.mid):null;
+    b=`
+    <label class="lbl">종류</label>
+    <select class="fld" id="gk">
+      ${['wedding','funeral','hwangap','dol','etc'].map(kk=>
+        `<option value="${kk}" ${e&&e.kind===kk?'selected':''}>${KIND[kk].emoji} ${KIND[kk].l}</option>`).join('')}
+    </select>
+    <label class="lbl">제목 <span style="color:#e11d48">*</span></label>
+    <input class="fld" id="f1" placeholder="예: 박민수 장남 결혼" value="${e?esc(e.title):''}">
+    <label class="lbl">관련 회원 <span class="tiny" style="font-weight:400">(선택)</span></label>
+    <select class="fld" id="gm">
+      <option value="">— 없음 —</option>
+      ${D.members.map(m=>`<option value="${m.id}" ${e&&e.mid===m.id?'selected':''}>${esc(m.name)}</option>`).join('')}
+    </select>
+    <label class="lbl">날짜</label>
+    <input class="fld" id="f3" type="date" value="${e?e.date:defDate}">
+    <label class="lbl">시간 <span class="tiny" style="font-weight:400">(선택)</span></label>
+    <input class="fld" id="f2" type="time" value="${e?(e.time||''):''}">
+    <label class="lbl">장소 <span class="tiny" style="font-weight:400">(선택)</span></label>
+    <input class="fld" id="f4" placeholder="예: 강남 웨딩홀" value="${e?esc(e.place||''):''}">
+    <label class="lbl">부조금/축의금 메모 <span class="tiny" style="font-weight:400">(선택)</span></label>
+    <input class="fld" id="gg" placeholder="예: 축의금 10만원" value="${e?esc(e.gift||''):''}">
+    ${e?`<button class="btn-o" style="width:100%;color:#e11d48;border-color:#fecdd3;margin-top:2px"
+        onclick="A.close();A.delEvent(${e.id})">이 경조사 삭제</button>`:''}`; }
+  if(t==='post') b=`
+    <input class="fld" id="f1" placeholder="제목">
+    <textarea class="fld" id="f2" rows="5" placeholder="내용" style="resize:none"></textarea>
+    <label style="font-size:13px;display:flex;gap:8px;align-items:center;margin-bottom:6px">
+      <input type="checkbox" id="f3"> 공지로 고정</label>`;
+  if(t==='member'){ const m=S.mid?D.members.find(x=>x.id===S.mid):null;
+    b=`<label class="lbl">성명 <span style="color:#e11d48">*</span></label>
+    <input class="fld" id="f1" placeholder="예: 홍길동" value="${m?esc(m.name):''}">
+    <label class="lbl">전화번호 <span style="color:#e11d48">*</span></label>
+    <input class="fld" id="f2" type="tel" inputmode="numeric" maxlength="13"
+           placeholder="010-0000-0000" value="${m?esc(m.tel||''):''}" oninput="onTel(this)">
+    <label class="lbl">핸디캡 <span class="tiny" style="font-weight:400">(선택 · 조편성에 사용)</span></label>
+    <input class="fld" id="f4" type="number" inputmode="numeric" placeholder="예: 15" value="${m&&m.hdcp!=null?m.hdcp:''}">
+    <label class="lbl">직책</label>
+    <select class="fld" id="f3">
+      ${['회원','회장','총무'].map(x=>`<option ${m&&m.role===x?'selected':''}>${x}</option>`).join('')}
+    </select>
+    ${m?`<button class="btn-o" style="width:100%;color:#e11d48;border-color:#fecdd3;margin-top:2px"
+        onclick="A.close();A.delMember(${m.id})">이 회원 삭제</button>`:''}`; }
+  if(t==='round'){ const rd=S.mid?D.rounds.find(x=>x.id===S.mid):null;
+    const scOf=id=>{ if(!rd)return''; const s=rd.scores.find(x=>x.mid===id); return s?s.gross:''; };
+    b=`
+    <label class="lbl">골프장</label>
+    <input class="fld" id="f1" placeholder="예: 남서울CC" value="${rd?esc(rd.course):''}">
+    <label class="lbl">날짜</label>
+    <input class="fld" id="f3" type="date" value="${rd?rd.date:today()}">
+    <label class="lbl" style="margin-top:6px">타수 입력 (친 사람만)</label>
+    ${D.members.map(m=>`<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+      <div class="avatar">${esc(m.name[0])}</div>
+      <div style="flex:1;font-size:14px">${esc(m.name)} <span class="tiny">핸디 ${m.hdcp??'-'}</span></div>
+      <input class="fld" id="sc${m.id}" type="number" inputmode="numeric" placeholder="-"
+             value="${scOf(m.id)}" style="width:74px;margin:0;text-align:center;font-weight:800">
+    </div>`).join('')}
+    ${rd?`<button class="btn-o" style="width:100%;color:#e11d48;border-color:#fecdd3;margin-top:2px"
+        onclick="A.close();A.delRound(${rd.id})">이 라운드 삭제</button>`:''}`; }
+  return `<div class="ov" onclick="A.close()">
+    <div class="sheet" onclick="event.stopPropagation()">
+      <h3>${title}</h3>${b}
+      <button class="save" onclick="submitM()">저장</button></div></div>`;
+}
+
+function submitM(){
+  const v=id=>{const el=document.getElementById(id);return el?el.value:''};
+  const t=S.modal;
+  if(t==='ledger'){ const a=+v('f2')||0;
+    if(!v('f1').trim()&&!a){alert('내용과 금액을 입력하세요');return}
+    D.ledger.unshift({id:Date.now(),date:v('f3')||today(),type:F.type==='out'?'out':'in',
+      title:v('f1').trim()||'항목',amount:a}); }
+  if(t==='event'){ if(!v('f1').trim()){alert('제목을 입력하세요');return}
+    if(S.mid){ const e=D.events.find(x=>x.id===S.mid);
+      e.title=v('f1').trim(); e.place=v('f4').trim(); e.date=v('f3')||e.date; e.time=v('f2')||e.time; }
+    else { D.events.push({id:Date.now(),date:v('f3')||today(),title:v('f1').trim(),
+      time:v('f2')||'07:00',place:v('f4').trim(),kind:'round',votes:{},teams:[],author:nameOf(S.me)}); }
+    D.events.sort((a,b)=>a.date.localeCompare(b.date)); }
+  if(t==='gyeongjo'){ if(!v('f1').trim()){alert('제목을 입력하세요');return}
+    const kk=v('gk')||'etc', mid=v('gm')?+v('gm'):null, gift=v('gg').trim();
+    if(S.mid){ const e=D.events.find(x=>x.id===S.mid);
+      e.kind=kk; e.title=v('f1').trim(); e.mid=mid; e.date=v('f3')||e.date;
+      e.time=v('f2'); e.place=v('f4').trim(); e.gift=gift; }
+    else { D.events.push({id:Date.now(),kind:kk,date:v('f3')||today(),title:v('f1').trim(),
+      mid,time:v('f2'),place:v('f4').trim(),gift,votes:{},teams:[],author:nameOf(S.me)}); }
+    D.events.sort((a,b)=>a.date.localeCompare(b.date)); }
+  if(t==='post'){ if(!v('f1').trim()){alert('제목을 입력하세요');return}
+    D.posts.unshift({id:Date.now(),author:nameOf(S.me),date:today().slice(5),
+      title:v('f1').trim(),body:v('f2'),pin:document.getElementById('f3')?.checked||false}); }
+  if(t==='member'){
+    const nm=v('f1').trim(), tel=v('f2').trim();
+    if(!nm){alert('성명을 입력하세요');return}
+    if(!telOK(tel)){alert('전화번호를 정확히 입력하세요 (예: 010-1234-5678)');return}
+    const dup=D.members.find(m=>m.id!==S.mid && m.tel &&
+      m.tel.replace(/\D/g,'')===tel.replace(/\D/g,''));
+    if(dup){alert(dup.name+' 님이 이미 같은 번호로 등록되어 있습니다');return}
+    const hd=v('f4').trim()===''?null:+v('f4');
+    if(S.mid){ const m=D.members.find(x=>x.id===S.mid);
+      m.name=nm; m.tel=fmtTel(tel); m.role=v('f3')||'회원'; m.hdcp=hd; }
+    else { D.members.push({id:Date.now(),name:nm,tel:fmtTel(tel),
+      role:v('f3')||'회원',paid:false,hdcp:hd}); } }
+  if(t==='round'){ if(!v('f1').trim()){alert('골프장을 입력하세요');return}
+    const sc=D.members.map(m=>({mid:m.id,gross:+v('sc'+m.id)||0})).filter(x=>x.gross>0);
+    if(!sc.length){alert('타수를 한 명 이상 입력하세요');return}
+    if(S.mid){ const rd=D.rounds.find(x=>x.id===S.mid);
+      rd.course=v('f1').trim(); rd.date=v('f3')||rd.date; rd.scores=sc; }
+    else { D.rounds.unshift({id:Date.now(),date:v('f3')||today(),course:v('f1').trim(),scores:sc,author:nameOf(S.me)}); }
+    D.rounds.sort((a,b)=>b.date.localeCompare(a.date)); }
+  if(t==='post') markSeen('posts');
+  if(t==='event'||t==='gyeongjo') markSeen('events');
+  if(t==='round') markSeen('rounds');
+  F={type:'in'}; S.modal=null; S.mid=null; save(); r();
+}
+
+function vViewer(){
+  const p=S.viewer;
+  return `<div class="viewer" onclick="A.closeView()">
+    ${p.src?`<img src="${p.src}">`:`<div style="width:70vw;max-width:340px;aspect-ratio:1;background:#1e293b;
+      border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:64px">${p.emoji||'🖼'}</div>`}
+    <div style="color:#fff;margin-top:14px;text-align:center">
+      <div style="font-weight:700">${esc(p.title)}</div>
+      <div style="color:rgba(255,255,255,.6);font-size:13px;margin-top:3px">${p.date} · ${esc(p.tag)}</div></div>
+  </div>`;
+}
+
+/* ---------- 렌더 ---------- */
+const TABS=[['home','홈',I.home,null],['money','재무',I.wallet,null],['cal','일정',I.cal,'events'],
+            ['score','스코어',I.score,'rounds'],['board','게시판',I.board,'posts'],
+            ['photo','사진첩',I.photo,'photos'],['set','설정',I.set,null]];
+function r(){
+  const app=document.getElementById('app');
+  if(!S.auth){ app.innerHTML=vGate(); document.title='뉴밀레니엄클럽'; return; }
+  const view={home:vHome,money:vMoney,cal:vCal,score:vScore,board:vBoard,photo:vPhoto,set:vSet}[S.tab]();
+  const totalNew=unread('posts')+unread('photos')+unread('events')+unread('rounds');
+  document.title=(totalNew?`(${totalNew}) `:'')+'뉴밀레니엄클럽';
+  app.innerHTML=vCover()+`<div style="padding:14px">${view}</div>`
+    +`<div class="tabbar"><div class="tabinner">${TABS.map(([id,l,ic,key])=>{
+      const n = key ? unread(key) : 0;
+      return `<button class="tab ${S.tab===id?'on':''}" onclick="A.go('${id}')">${ic}<span>${l}</span>${badge(n)}</button>`;
+      }).join('')}
+      </div></div>`
+    +(S.modal?vModal():'')+(S.viewer?vViewer():'');
+}
+
+/* ---------- 파이어베이스 연결 ---------- */
+function bootFirebase(){
+  firebase.initializeApp(FIREBASE_CONFIG);
+  fdb=firebase.database();
+  fdb.ref('club').on('value',snap=>{
+    const v=snap.val();
+    if(v){ pushing=true; D=v; try{localStorage.setItem('nmc',JSON.stringify(D))}catch(e){} pushing=false; r(); }
+    else { fdb.ref('club').set(D).catch(()=>{}); }
+  },()=>{});
+}
+if(LIVE){
+  const s1=document.createElement('script');
+  s1.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js';
+  s1.onload=()=>{ const s2=document.createElement('script');
+    s2.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js';
+    s2.onload=bootFirebase; document.head.appendChild(s2); };
+  document.head.appendChild(s1);
+}
+r();
+</script>
+</body>
+</html>
